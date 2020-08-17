@@ -14,6 +14,7 @@ There are four data sources going to be used in this project:
 2. Coordinates of neighbourhoods extracted by Geopy from Nominatim
 3. Foursquare used for retrieving data of venues including their name, location, and category. In this project, only location and categories are going to be used.
 4. Realtor API which is going to utilised for exploring available rental options in nominated neighbourhoods
+
 For example, Aron decided to pursue his studies at MIT which is in Cambridge neighbourhood. Although the idea choice would be within Cambridge, Aron suspects that it would be costly to live there. So, he is interested to consider surrounding neighbourhoods as well. So, in the first step, a list of neighbourhoods is retrieved. Then several neighbourhoods are nominated based on the distance for further exploration. In the next step, coordinates of these neighbourhoods are found by use of Geopy. Having those coordinates, Foursquare API can be utilised to find venues accompanying their categories. Each category is scored by Aron which contributes to the overall score of rental options. In the next stage, available apartments for rent are found by use of Realtor API. Having coordinates of each option, it is possible to calculate the corresponding score aligned with the filtered costs. At last, options are sorted to give top 10.
 
  
